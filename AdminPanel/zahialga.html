@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="category.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <span class="logo">CLOUDNINE ADMIN</span>
+      <ul class="navbar-menu">
+        <li><a href="undsen.html">ҮНДСЭН </a></li>
+        <li><a href="Category.html" >АНГИЛАЛ</a></li>
+        <li><a href="Бараа.html">БАРАА</a></li>
+        <li><a href="zahialga.html"class="active">ЗАХИАЛГА</a></li>
+        <li><a href="tulbur.html">ТӨЛБӨР</a></li>
+        <li><a href="uilchluulegch.html">ҮЙЛЧЛҮҮЛЭГЧ</a></li>
+        <li><a href="medee.html">МЭДЭЭ</a></li>
+        <li><a href="nevtreh.html">НЭВТРЭХ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="orders-container">
+    <h1>Захиалга</h1>
+  
+    <!-- Existing Orders Table -->
+    <div class="orders-list">
+      <h3>Одоо байгаа захиалгууд</h3>
+      <table class="orders-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Хэрэглэгч</th>
+            <th>Бараа</th>
+            <th>Тоо ширхэг</th>
+            <th>Нийт дүн</th>
+            <th>Төлөв</th>
+            <th>Үйлдэл</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Болд Бат</td>
+            <td>Сэргээгч тос</td>
+            <td>2</td>
+            <td>₮30,000</td>
+            <td>Хүлээгдэж буй</td>
+            <td>
+              <select class="order-status">
+                <option value="pending" selected>Хүлээгдэж буй</option>
+                <option value="processed">Боловсруулсан</option>
+                <option value="shipped">Хүргэсэн</option>
+                <option value="canceled">Цуцалсан</option>
+              </select>
+              <button class="update-btn">Шинэчлэх</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Сараа Дорж</td>
+            <td>Уруулын будаг</td>
+            <td>1</td>
+            <td>₮25,000</td>
+            <td>Боловсруулсан</td>
+            <td>
+              <select class="order-status">
+                <option value="pending">Хүлээгдэж буй</option>
+                <option value="processed" selected>Боловсруулсан</option>
+                <option value="shipped">Хүргэсэн</option>
+                <option value="canceled">Цуцалсан</option>
+              </select>
+              <button class="update-btn">Шинэчлэх</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  
+  
+
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-container">
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <h3>Админы Холбоос</h3>
+        <ul>
+          <li><a href="undsen.html">ҮНДСЭН</a></li>
+          <li><a href="categories.html">АНГИЛАЛ</a></li>
+          <li><a href="Бараа.html">БАРАА</a></li>
+          <li><a href="zahialga.html">ЗАХИАЛГА</a></li>
+          <li><a href="tulbur.html">ТӨЛБӨР</a></li>
+          <li><a href="uilchluulegch.html">ҮЙЛЧЛҮҮЛЭГЧ</a></li>
+          <li><a href="medee.html">МЭДЭЭ</a></li>
+          <li><a href="nevtreh.html">НЭВТРЭХ</a></li>
+        </ul>
+      </div>    
+  
+      <!-- Social Media Links -->
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/cloudninemongolia"><img src="facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/cloudnine_mongolia/?hl=en"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="footer-contact">
+        <h3>Developer Contacs</h3>
+        <p>Email: Gantulga@gmail.com</p>
+        <p>Phone: 9999999</p>
+        <p>Address: SHUTIS - MHTS</p>
+      </div>
+  
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>© 2024 Cloudnine Admin Panel. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+<STYLE>
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.logo {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar-menu {
+  display: flex;
+  gap: 16px;
+}
+.navbar-menu li a {
+  font-size: 16px;
+  color: #333;
+}
+
+.navbar-menu li a.active {
+  color: #141123; /* Highlight active page */
+  font-weight: bold;
+}
+
+
+/* Main Content */
+/* Orders Section */
+.orders-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 16px;
+}
+
+.orders-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.orders-list {
+  margin-top: 20px;
+}
+
+.orders-list h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #f8f9fa;
+  font-size: 16px;
+  color: #333;
+}
+
+.orders-table td {
+  font-size: 14px;
+  color: #555;
+}
+
+.order-status {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.update-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: auto; /* Ensures the footer stays at the bottom */
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .footer-links, .footer-social, .footer-contact {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  .footer-links h3, .footer-social h3, .footer-contact h3,  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .footer-links ul {
+    padding: 0;
+    list-style: none;
+  }
+  .footer-links ul li{
+    margin-bottom: 8px;
+  }
+  .footer-links ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer-links ul li a:hover {
+    color: #fff;
+  }
+  
+  /* Social Media Icons */
+  .footer-social .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  .footer-social .social-icons a img {
+    width: 44px;
+    height: 44px;
+    transition: transform 0.3s;
+  }
+  .footer-social .social-icons a:hover img {
+    transform: scale(1.2);
+  }
+  
+  /* Contact Info */
+  .footer-contact p {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+  /* Sticky Footer */
+  body {
+    min-height: 100vh; /* Ensures full height */
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    flex: 1; /* Pushes the footer to the bottom */
+  }
+</style>
